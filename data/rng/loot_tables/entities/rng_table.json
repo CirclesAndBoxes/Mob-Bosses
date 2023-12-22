@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 0,
+        "max": 99
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{RNG:1,PickupDelay:10000,Age:5995}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

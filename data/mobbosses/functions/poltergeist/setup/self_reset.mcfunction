@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=Poltergeist] at @s run fill ~ ~ ~ ~ ~3 ~ air

@@ -1,0 +1,23 @@
+#To do: 
+# 1. resummon hitbox
+# 2. increment stage
+# 3. put in the stuff needed for stages to increase and all.
+
+#Ends current attack
+function mobbosses:flower_knight/attacks/end
+
+#
+scoreboard players add @s BossStage 1
+
+# Summons the hitbox
+summon husk ~ ~ ~ {Tags:["flowerKnightHitbox","hitboxInit"],Attributes:[{Name:"minecraft:generic.max_health",Base:100},{Name:"minecraft:generic.knockback_resistance",Base:100.0}],Health:100f,DeathLootTable:"",NoAI:1b,Silent:1b,PersistenceRequired:1b,active_effects:[{id:"minecraft:invisibility", duration: 999999999, show_particles: false}], Invulnerable:1b}
+scoreboard players operation @e[type=husk,limit=1,sort=nearest,tag=hitboxInit] BossIDs = @s BossIDs
+tag @e[type=husk,tag=hitboxInit] remove hitboxInit
+
+
+# Arbitrary
+scoreboard players set @s BossTimer 200
+
+
+
+

@@ -1,0 +1,1 @@
+summon bee ~ ~ ~ {CustomName:'["Queen Bee"]',Tags:["Buzzye","BuzzBoss"],Attributes:[{Name:"minecraft:generic.max_health",Base:200},{Name:"minecraft:generic.movement_speed",Base:0.6},{Name:"minecraft:generic.follow_range",Base:1024},{Name:"minecraft:generic.flying_speed",Base:0.8}],AngerTime:1000000,Health:200f,PersistenceRequired:1b}

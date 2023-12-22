@@ -1,0 +1,1 @@
+summon area_effect_cloud ~ ~ ~ {Radius:2,Duration:40,Color:9080202,Tags:["TrapCloud"],effects:[{id:"minecraft:slowness",duration:40}],RadiusOnUse:0}

@@ -1,0 +1,2 @@
+playsound minecraft:block.beehive.exit hostile @a[distance=..10] ~ ~ ~ 1 0.66
+summon minecraft:armor_stand ~ ~1 ~ {Tags:["cactus_missile"],NoGravity:1b,Invisible:1b,ShowArms:0b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;147415406,-1865399648,-1195580806,-514626266],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFiZmRlODM5OGMxMTAyODc1Y2NlOGJmY2MzNDJlNGZlZTM0ZGNjYjQ4MzQxOTc4ZGU1MzQ2YzBiZjU0NWFhNyJ9fX0="}]}}}}],DisabledSlots:4194303}
