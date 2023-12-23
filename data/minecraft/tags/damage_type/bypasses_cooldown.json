@@ -1,5 +1,6 @@
 {
     "values": [
-        "mobbosses:mob_attack"
+        "mobbosses:multihit",
+        "minecraft:out_of_world"
     ]
 }
