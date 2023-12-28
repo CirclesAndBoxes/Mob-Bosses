@@ -30,4 +30,3 @@ execute if score @s BossStage matches 3 if score @s BossTimer matches 60 run fun
 execute if score @s BossStage matches 4 if score @s BossTimer matches 200 run data merge entity @e[type=husk,tag=flowerKnightHitbox,limit=1,sort=nearest] {Invulnerable:0b}
 execute if score @s BossStage matches 4 if score @s BossTimer matches 200 run scoreboard players remove @s BossTimer 150
 
-

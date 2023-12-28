@@ -10,3 +10,4 @@ playsound entity.enderman.teleport hostile @a ~ ~ ~ 2
 particle portal ~ ~0.75 ~ 0.02 0.4 0.02 0 40
 particle cherry_leaves ~ ~0.75 ~ 0.4 0.02 0.4 0 30
 #say "tp"
+execute unless block ~ ~-2 ~ emerald_block unless block ~ ~-3 ~ emerald_block unless block ~ ~-1 ~ emerald_block run function mobbosses:flower_knight/attacks/teleport

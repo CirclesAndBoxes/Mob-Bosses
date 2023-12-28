@@ -39,3 +39,4 @@ execute at @s as @e[type=husk,tag=flowerKnightHitbox,limit=1] if score @s BossID
 
 execute at @s if score @e[type=husk,tag=flowerKnightHitbox,limit=1,sort=nearest,nbt={HurtTime:9s}] BossIDs = @s BossIDs run scoreboard players remove @s BossTimer 20
 
+execute at @s as @e[type=husk,tag=flowerKnightHitbox,limit=1,sort=nearest] if score @s BossIDs = @e[type=armor_stand,limit=1,sort=nearest,tag=flowerKnight] BossIDs store result bossbar flowerbossbar value run data get entity @s Health

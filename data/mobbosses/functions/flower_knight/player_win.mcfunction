@@ -4,3 +4,4 @@ gamemode adventure @a[tag=flowerKnightVictim]
 tag @a remove flowerKnightVictim
 title @a title "You Win!"
 kill @s
+bossbar remove flowerbossbar

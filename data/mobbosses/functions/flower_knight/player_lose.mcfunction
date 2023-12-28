@@ -6,3 +6,4 @@ scoreboard players set @a[tag=flowerKnightVictim] mb_DeathCounter 0
 gamemode adventure @a[tag=flowerKnightVictim]
 tag @a remove flowerKnightVictim
 kill @s
+bossbar remove flowerbossbar
