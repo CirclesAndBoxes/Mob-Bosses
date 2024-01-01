@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:armor_stand,limit=1,sort=nearest,tag=flowerKnight] run function mobbosses:flower_knight/start

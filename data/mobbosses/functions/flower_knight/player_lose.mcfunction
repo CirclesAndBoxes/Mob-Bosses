@@ -1,4 +1,4 @@
-tellraw @a "You Lose! (I'm still alive!)"
+tellraw @a ["",{"text":"["},{"text":"Blossom Knight","color":"light_purple"},{"text":"]: Oops! Try again!"}] 
 # Make some sort of reset thing here
 scoreboard players set @s BossStage -1
 scoreboard players set @s BossTimer 0
