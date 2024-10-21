@@ -1,3 +1,4 @@
+#tellraw @a {"text":"Selected from Melee Pool", "color":"green"}
 
 #50% chance to step forward before a basic slash with this command
 execute if score @s rng matches 10..31 run function mobbosses:flower_knight/attacks/step

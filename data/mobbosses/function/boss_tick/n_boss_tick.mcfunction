@@ -41,7 +41,7 @@ execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=2,BossT
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=2,BossTimer=166..180}] at @s run summon endermite ~ ~ ~ {Tags:["NA-R2"],PersistenceRequired:1b,ArmorItems:[{id:"minecraft:iron_ingot",Count:1},{},{},{}],ArmorDropChances:[0.11f,0.0f,0.0f,0.0f]}
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=2,BossTimer=100}] at @s run playsound entity.enderman.scream hostile @a ~ ~ ~ 10 1
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=2,BossTimer=66..80}] at @s run summon endermite ~ ~ ~ {Tags:["NA-R2"],PersistenceRequired:1b,ArmorItems:[{id:"minecraft:iron_ingot",Count:1},{},{},{}],ArmorDropChances:[0.11f,0.0f,0.0f,0.0f]}
-execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=2,BossTimer=65}] at @s run summon bee ~ ~ ~ {CustomName:'["Totally Endermite"]',Tags:["Buzzye","NA-R2"],Attributes:[{Name:"minecraft:generic.max_health",Base:120},{Name:"minecraft:generic.movement_speed",Base:0.6},{Name:"minecraft:generic.follow_range",Base:1024},{Name:"minecraft:generic.flying_speed",Base:0.8}],AngerTime:1000000,Health:120f,PersistenceRequired:1b,ArmorItems:[{id:"minecraft:gold_ingot",Count:1},{},{},{}],ArmorDropChances:[1.0f,0.0f,0.0f,0.0f]}
+execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=2,BossTimer=65}] at @s run summon bee ~ ~ ~ {CustomName:'["Totally Endermite"]',Tags:["Buzzye","NA-R2"],Attributes:[{id:"minecraft:generic.max_health",base:120},{id:"minecraft:generic.movement_speed",base:0.6},{id:"minecraft:generic.follow_range",base:1024},{id:"minecraft:generic.flying_speed",base:0.8}],AngerTime:1000000,Health:120f,PersistenceRequired:1b,ArmorItems:[{id:"minecraft:gold_ingot",Count:1},{},{},{}],ArmorDropChances:[1.0f,0.0f,0.0f,0.0f]}
 
 
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=2,BossTimer=0..400}] run scoreboard players remove @s BossTimer 1
@@ -116,7 +116,7 @@ execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=5,BossT
 
 
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=5,BossTimer=1000}] at @s run say "Survive This!"
-execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=5,BossTimer=1000}] at @s run data merge entity @s {NoAI:0b,HandItems:[{id:"minecraft:bow",Count:1,tag:{Enchantments:[{id:"minecraft:power",lvl:4}]}},{id:"minecraft:tipped_arrow",Count:64,tag:{CustomPotionColor:8134665,display:{Name:'[{"text":"Cursed Arrow"}]'},CustomPotionEffects:[{Id:4,Duration:5,Amplifier:4}]}}]}
+execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=5,BossTimer=1000}] at @s run data merge entity @s {NoAI:0b,HandItems:[{id:"minecraft:bow",Count:1,tag:{Enchantments:[{id:"minecraft:power",lvl:4}]}},{id:"minecraft:tipped_arrow",Count:64,tag:{CustomPotionColor:8134665,display:{id:'[{"text":"Cursed Arrow"}]'},CustomPotionEffects:[{Id:4,Duration:5,Amplifier:4}]}}]}
 execute as @e[type=arrow,nbt={Color:8134665,CustomPotionEffects:[{Id:4b,Duration:5,Amplifier:4b}],inGround:1b}] at @s run summon endermite ^ ^1 ^-1.1 {ActiveEffects:[{Id:22b,Amplifier:30,Duration:10}],AbsorptionAmount:60f}
 execute as @e[type=arrow,nbt={Color:8134665,CustomPotionEffects:[{Id:4b,Duration:5,Amplifier:4b}],inGround:1b}] at @s run summon endermite ^ ^1 ^-1.1 {ActiveEffects:[{Id:22b,Amplifier:30,Duration:10}],AbsorptionAmount:60f}
 execute as @e[type=arrow,nbt={Color:8134665,CustomPotionEffects:[{Id:4b,Duration:5,Amplifier:4b}],inGround:1b}] at @s run summon creeper ^ ^1 ^-1 {ExplosionRadius:3,ignited:1b,Fuse:1s}
@@ -157,7 +157,7 @@ execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossT
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossTimer=0..2000}] run scoreboard players remove @s BossTimer 1
 #5th Round Transition to 6th
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossTimer=..0}] unless entity @e[tag=NA-R6] run scoreboard players set @s BossTimer 10006
-execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossTimer=10006}] run data merge entity @s {HandItems:[{id:"minecraft:stone_axe",Count:1},{}],Attributes:[{Name:"minecraft:generic.movement_speed",Base:0.3}],NoAI:0b,Invulnerable:0b}
+execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossTimer=10006}] run data merge entity @s {HandItems:[{id:"minecraft:stone_axe",Count:1},{}],Attributes:[{id:"minecraft:generic.movement_speed",base:0.3}],NoAI:0b,Invulnerable:0b}
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossTimer=10006}] run say "Fine, I'll get you myself!"
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossTimer=10006}] at @s run playsound entity.wither.spawn hostile @a ~ ~ ~ 10 1
 execute as @e[type=wither_skeleton,tag=NetherArenaBoss,scores={BossStage=6,BossTimer=10006}] run scoreboard players set @s BossStage 7

@@ -1,3 +1,5 @@
+#tellraw @a {"text":"Finished move and resetting timer", "color":"gold"}
+
 #Basic thing to use to start out.
 function rng:rng_store
 scoreboard players set @s BossTimer 30
