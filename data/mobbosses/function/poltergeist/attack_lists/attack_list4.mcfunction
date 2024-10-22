@@ -31,7 +31,7 @@ execute if score @s BossTimer matches 710 if score @s BossDifficulty matches 2..
 execute if score @s BossTimer matches 740 run summon spider ~ ~ ~
 execute if score @s BossTimer matches 780 run function mobbosses:poltergeist/attacks/exploding_ray/arrangements/tiktaktoe
 execute if score @s BossTimer matches 840 positioned ~-10 ~0.9 ~2 facing ~1 ~ ~ run function mobbosses:poltergeist/attacks/exploding_ray/start
-execute if score @s BossTimer matches 870 run summon zombie ~ ~ ~ {ArmorItems:[{id:"minecraft:leather_boots",Count:1},{id:"minecraft:leather_leggings",Count:1},{id:"minecraft:leather_chestplate",Count:1},{id:"minecraft:leather_helmet",Count:1}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}
+execute if score @s BossTimer matches 870 run summon zombie ~ ~ ~ {ArmorItems:[{id:"minecraft:leather_boots",count:1},{id:"minecraft:leather_leggings",count:1},{id:"minecraft:leather_chestplate",count:1},{id:"minecraft:leather_helmet",count:1}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}
 execute if score @s BossTimer matches 890 if score @s BossDifficulty matches 2.. summon skeleton run summon wither_skeleton ~ ~ ~
 
 execute if score @s BossTimer matches 920 positioned ~-2 ~0.9 ~-10 facing ~ ~ ~1 run function mobbosses:poltergeist/attacks/exploding_ray/start

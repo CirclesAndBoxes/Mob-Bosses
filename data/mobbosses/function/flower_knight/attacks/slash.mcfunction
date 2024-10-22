@@ -20,6 +20,13 @@ execute rotated ~45 ~ positioned ^ ^ ^2 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 ru
 execute rotated ~-22.5 ~ positioned ^ ^ ^2 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 run tag @s add flowerSwept
 execute rotated ~22.5 ~ positioned ^ ^ ^2 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 run tag @s add flowerSwept
 
+execute positioned ^ ^ ^1 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 run tag @s add flowerSwept
+execute rotated ~-45 ~ positioned ^ ^ ^1 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 run tag @s add flowerSwept
+execute rotated ~45 ~ positioned ^ ^ ^1 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 run tag @s add flowerSwept
+execute rotated ~-22.5 ~ positioned ^ ^ ^1 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 run tag @s add flowerSwept
+execute rotated ~22.5 ~ positioned ^ ^ ^1 as @e[dx=0] positioned ~-.5 ~-.5 ~-.5 run tag @s add flowerSwept
+
+
 execute positioned ~ ~ ~ as @e[dx=0] positioned ~-.99 ~-.99 ~-.99 if entity @s[dx=0] run tag @s add flowerSwept
 
 execute positioned ^ ^ ^2.7 run particle sweep_attack ~ ~ ~ 0 0 0 0 1 force
