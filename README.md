@@ -26,4 +26,4 @@ To run the bosses, first install the datapack as you would with any other datapa
 2. Stand in the center of the arena and run <pre>/function mobbosses:flower_knight/summon</pre> Then run <pre>/function mobbosses:flower_knight/start_nearest</pre> This has the advantage of not rebuilding the arena.
    This boss is recommended to be fought with full leather armor and a stone sword, along with a golden apple. If it is too hard, add a chainmail chestplate or more armor. If it is too easy, switch to a golden sword or wear less armor. All gear should be Unbreakable.
 
-Anyway, good luck and have fun fighting the bosses!
+Good luck and have fun fighting the bosses!
