@@ -23,7 +23,7 @@ To run the bosses, first install the datapack as you would with any other datapa
 ### Flower Knight:
   To fight this boss, just run the command <pre>/function mobbosses:flower_knight/arena_and_fight</pre>  (Make sure you are in an area that is fully exposed to the sky, otherwise the boss will break very quickly.) However, if the players die, the boss will also die, and it is harder to reset the boss if you want to keep the arena. There are two ways to reset the boss:
 1. Stand in the center of the arena (on the rooted dirt) and re-run  /function mobbosses:flower_knight/arena_and_fight, which will re-build the arena around you
-2. Stand in the center of the arena and run <pre>/function mobbosses:flower_knight/summon</pre>. Then, run <pre>/function mobbosses:flower_knight/start_nearest</pre>. This has the advantage of not rebuilding the arena.
+2. Stand in the center of the arena and run <pre>/function mobbosses:flower_knight/summon</pre> Then run <pre>/function mobbosses:flower_knight/start_nearest</pre> This has the advantage of not rebuilding the arena.
    This boss is recommended to be fought with full leather armor and a stone sword, along with a golden apple. If it is too hard, add a chainmail chestplate or more armor. If it is too easy, switch to a golden sword or wear less armor. All gear should be Unbreakable.
 
-   Anyway, good luck and have fun fighting the bosses!
+Anyway, good luck and have fun fighting the bosses!
