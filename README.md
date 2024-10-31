@@ -1,6 +1,9 @@
+## Introduction
 This code allows you to summon some bosses I made with minecraft "command block code"
 
-To run the bosses, first install the datapack as you would with any other datapack. Then, you can start fighting the bosses! There are two types of bosses, "simple" and "complex" bosses. Simple bosses use less code, while complex bosses require entire folders and files to allow for their complexity
+To run the bosses, first install the datapack as you would with any other datapack. Then, you can start fighting the bosses! There are two types of bosses, "simple" and "complex" bosses. Simple bosses use less code, while complex bosses require entire folders and files to allow for their complexity.
+
+This data pack is up to date for the 1.21.1 version of Minecraft
 
 ## Simple Bosses:
   Simple bosses are easy to summon. Just type: /function mobbosses:summon_boss/summon_ followed by the name of the boss that you want to summon (it should auto-fill). These bosses are to be fought with full diamond armor, a diamond sword, and steak in adventure mode. They should also be fought in a relatively enclosed area. There are a few exceptions:
