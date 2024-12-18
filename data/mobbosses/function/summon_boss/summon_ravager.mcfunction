@@ -1,4 +1,4 @@
-summon ravager ~ ~ ~ {Tags:["RvBoss"],Attributes:[{id:"generic.max_health",base:600}],ArmorItems:[{},{},{id:"netherite_chestplate",Count:1,tag:{Enchantments:[{id:"projectile_protection",lvl:2}],Unbreakable:1}},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Health:600f,PersistenceRequired:1b}
+summon ravager ~ ~ ~ {Tags:["RvBoss"],Attributes:[{id:"max_health",base:600}],ArmorItems:[{},{},{id:"netherite_chestplate",Count:1,tag:{Enchantments:[{id:"projectile_protection",lvl:2}],Unbreakable:1}},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Health:600f,PersistenceRequired:1b}
 
 bossbar set rvbossbar name "Ravager"
 bossbar set rvbossbar visible true
