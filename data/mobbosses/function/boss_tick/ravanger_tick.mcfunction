@@ -1,4 +1,4 @@
-execute store result bossbar rvbossbar value run data get entity @e[tag=RvBoss,type=ravager,limit=1] Health 1
+#execute store result bossbar rvbossbar value run data get entity @e[tag=RvBoss,type=ravager,limit=1] Health 1
 
 #
 execute as @e[type=ravager,tag=RvBoss] at @s if entity @s[scores={BossTimer=601..,}] run scoreboard players remove @s BossTimer 1
@@ -17,10 +17,10 @@ execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=640,}] at @s run particl
 execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=620,}] at @s run particle angry_villager ~ ~ ~ 1 1 1 4 10 force
 execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=610,}] at @s run particle angry_villager ~ ~ ~ 1 1 1 4 10 force
 
-execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~3 ~0.5 ~ {Tags:["RvSummon"],HandDropChances:[0.0f,0.0f]}
-execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~-3 ~0.5 ~ {Tags:["RvSummon"],HandDropChances:[0.0f,0.0f]}
-execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~ ~0.5 ~3 {Tags:["RvSummon"],HandDropChances:[0.0f,0.0f]}
-execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~ ~0.5 ~-3 {Tags:["RvSummon"],HandDropChances:[0.0f,0.0f]}
+execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~3 ~0.5 ~ {Tags:["RvSummon"],DeathLootTable:""}
+execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~-3 ~0.5 ~ {Tags:["RvSummon"],DeathLootTable:""}
+execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~ ~0.5 ~3 {Tags:["RvSummon"],DeathLootTable:""}
+execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vindicator ~ ~0.5 ~-3 {Tags:["RvSummon"],DeathLootTable:""}
 
 execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vex ~ ~2 ~ {Tags:["RvSummon"]}
 execute as @e[type=ravager,tag=RvBoss,scores={BossTimer=601,}] at @s run summon vex ~ ~2 ~ {Tags:["RvSummon"]}

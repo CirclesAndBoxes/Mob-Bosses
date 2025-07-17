@@ -1,4 +1,4 @@
-summon iron_golem ~ ~ ~ {Tags:["AngryIron","StrongIronBoss"],AngerTime:999999,Attributes:[{id:"minecraft:max_health",base:300}],Health:300f,ArmorItems:[{},{},{id:"minecraft:iron_chestplate",Count:1,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:fire_protection",lvl:2},{id:"minecraft:blast_protection",lvl:2},{id:"minecraft:projectile_protection",lvl:2}]}},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f]}
+summon iron_golem ~ ~ ~ {Tags:["AngryIron","StrongIronBoss"],AngerTime:999999,attributes:[{id:"minecraft:max_health",base:300}],Health:300f,equipment:{chest:{id:"minecraft:iron_chestplate",count:1,components:{enchantments:{fire_protection:2,blast_protection:2,projectile_protection:2}}}},drop_chances:{head:0.0,body:0.0,chest:0.0,feet:0.0,legs:0.0,mainhand:0.0,offhand:0.0}}
 scoreboard players set @e[tag=StrongIronBoss,limit=1,sort=nearest] BossTimer 100
 scoreboard players set @e[tag=StrongIronBoss,limit=1,sort=nearest] BossStage 0
 scoreboard players set @e[tag=StrongIronBoss,limit=1,sort=nearest] BossAttack 0

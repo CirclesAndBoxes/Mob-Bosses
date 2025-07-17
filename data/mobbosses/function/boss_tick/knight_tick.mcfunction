@@ -45,10 +45,10 @@ execute if entity @s[scores={BossAttack=0,BossTimer=..0,rng=81..100}] run scoreb
 #Using vexes temporarily since I want to.
 execute if entity @s[scores={BossAttack=5,BossAttackTimer=300}] run effect give @s slowness 5 0 false
 execute if entity @s[scores={BossAttack=5,BossAttackTimer=300}] run playsound entity.evoker.prepare_summon hostile @a
-execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {LifeTicks:200}
-execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {LifeTicks:200}
-execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {LifeTicks:200}
-execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {LifeTicks:200}
+execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {life_ticks:200}
+execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {life_ticks:200}
+execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {life_ticks:200}
+execute if entity @s[scores={BossAttack=5,BossAttackTimer=240}] run summon vex ~ ~1 ~ {life_ticks:200}
 
 
 execute if entity @s[scores={BossAttackTimer=1..}] run scoreboard players remove @s BossAttackTimer 1

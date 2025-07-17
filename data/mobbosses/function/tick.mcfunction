@@ -29,7 +29,7 @@ execute as @e[tag=BuzzBoss,scores={DamageCounter=3..}] at @s run scoreboard play
 
 
 #Pillager
-execute as @e[tag=SuperRapidPillager,type=pillager] at @s run data merge entity @s {HandItems:[{id:"minecraft:crossbow",count:1,components:{enchantments:{quick_charge:5},"minecraft:charged_projectiles":[{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:harming"}}}]}},{id:"minecraft:tipped_arrow",count:64,components:{"minecraft:potion_contents":{potion:"minecraft:harming"}}}]}
+execute as @e[tag=SuperRapidPillager,type=pillager] at @s run data merge entity @s {equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{enchantments:{quick_charge:5},"minecraft:charged_projectiles":[{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:harming"}}}]}},offhand:{id:"minecraft:tipped_arrow",count:64,components:{"minecraft:potion_contents":{potion:"minecraft:harming"}}}}}
 
 #Iron Golem
 execute as @e[tag=AngryIron] at @s run data merge entity @s {AngerTime:1000000}
