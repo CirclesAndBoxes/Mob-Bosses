@@ -27,11 +27,11 @@ execute if score @s BossTimer matches 650 run function mobbosses:poltergeist/att
 
 #Honestly, check how fair this is.
 execute if score @s BossTimer matches 680 run function mobbosses:poltergeist/attacks/ground_parts/g_center
-execute if score @s BossTimer matches 710 if score @s BossDifficulty matches 2.. summon spider run summon spider ~ ~ ~
-execute if score @s BossTimer matches 740 run summon spider ~ ~ ~
+execute if score @s BossTimer matches 710 if score @s BossDifficulty matches 2.. summon spider run summon spider ~ ~ ~ {Tags:["PolMob"],DeathLootTable:""}
+execute if score @s BossTimer matches 740 run summon spider ~ ~ ~ {Tags:["PolMob"],DeathLootTable:""}
 execute if score @s BossTimer matches 780 run function mobbosses:poltergeist/attacks/exploding_ray/arrangements/tiktaktoe
 execute if score @s BossTimer matches 840 positioned ~-10 ~0.9 ~2 facing ~1 ~ ~ run function mobbosses:poltergeist/attacks/exploding_ray/start
-execute if score @s BossTimer matches 870 run summon zombie ~ ~ ~ {equipment:{feet:{id:"minecraft:leather_boots",count:1},legs:{id:"minecraft:leather_leggings",count:1},chest:{id:"minecraft:leather_chestplate",count:1},head:{id:"minecraft:leather_helmet",count:1}},drop_chances:{head:0.0,body:0.0,chest:0.0,feet:0.0,legs:0.0,mainhand:0.0,offhand:0.0}}
+execute if score @s BossTimer matches 870 run summon zombie ~ ~ ~ {Tags:["PolMob"],DeathLootTable:"",equipment:{feet:{id:"minecraft:leather_boots",count:1},legs:{id:"minecraft:leather_leggings",count:1},chest:{id:"minecraft:leather_chestplate",count:1},head:{id:"minecraft:leather_helmet",count:1}},drop_chances:{head:0.0,body:0.0,chest:0.0,feet:0.0,legs:0.0,mainhand:0.0,offhand:0.0}}
 execute if score @s BossTimer matches 890 if score @s BossDifficulty matches 2.. summon skeleton run summon wither_skeleton ~ ~ ~
 
 execute if score @s BossTimer matches 920 positioned ~-2 ~0.9 ~-10 facing ~ ~ ~1 run function mobbosses:poltergeist/attacks/exploding_ray/start
@@ -40,7 +40,7 @@ execute if score @s BossTimer matches 1010 run function mobbosses:poltergeist/at
 
 execute if score @s BossTimer matches 1050 run tellraw @a "[Poltergeist]: Fine."
 execute if score @s BossTimer matches 1080 run function mobbosses:poltergeist/attacks/ground_parts/parkour
-execute if score @s BossTimer matches 1190 if score @s BossDifficulty matches 2.. positioned ~ ~9 ~ summon skeleton run summon skeleton
+execute if score @s BossTimer matches 1190 if score @s BossDifficulty matches 2.. positioned ~ ~9 ~ summon skeleton run summon skeleton ~ ~ ~ {Tags:["PolMob"],DeathLootTable:""}
 execute if score @s BossTimer matches 1100 run playsound block.dispenser.fail hostile @a ~ ~ ~ 10 0.8
 execute if score @s BossTimer matches 1120 run playsound block.dispenser.fail hostile @a ~ ~ ~ 10 0.87
 execute if score @s BossTimer matches 1140 run playsound block.dispenser.fail hostile @a ~ ~ ~ 10 0.94

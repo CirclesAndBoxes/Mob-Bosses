@@ -1,6 +1,6 @@
 execute if score @s BossTimer matches 20 run tellraw @a "[Poltergeist]: That hurt!"
 execute if score @s BossTimer matches 80 run tellraw @a "[Poltergeist]: See if you can keep up with this then."
-execute if score @s BossTimer matches 90 if score @s BossDifficulty matches 2.. summon spider run summon spider ~ ~ ~
+execute if score @s BossTimer matches 90 if score @s BossDifficulty matches 2.. summon spider run summon spider ~ ~ ~ {Tags:["PolMob"],DeathLootTable:""}
 
 execute if score @s BossTimer matches 100 run function mobbosses:poltergeist/attacks/bows/arrangements/mhort
 execute if score @s BossTimer matches 110 run function mobbosses:poltergeist/attacks/bows/arrangements/mvert

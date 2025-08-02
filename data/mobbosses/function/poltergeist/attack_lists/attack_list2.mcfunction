@@ -19,7 +19,7 @@ execute if score @s BossTimer matches 540 positioned ~10 ~ ~-10 if score @s Boss
 execute if score @s BossTimer matches 550 run function mobbosses:poltergeist/attacks/bows/arrangements/down
 execute if score @s BossTimer matches 570 run function mobbosses:poltergeist/attacks/bows/arrangements/up
 execute if score @s BossTimer matches 610 run function mobbosses:poltergeist/attacks/ground_parts/edges
-execute if score @s BossTimer matches 620 run summon spider ~ ~ ~ {}
+execute if score @s BossTimer matches 620 run summon spider ~ ~ ~ {Tags:["PolMob"],DeathLootTable:""}
 execute if score @s BossTimer matches 630 if score @s BossDifficulty matches 2.. summon spider run summon spider ~ ~ ~
 execute if score @s BossTimer matches 670 run function mobbosses:poltergeist/attacks/exploding_ray/arrangements/x_shape
 execute if score @s BossTimer matches 700 run function mobbosses:poltergeist/attacks/exploding_ray/arrangements/edges

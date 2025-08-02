@@ -3,7 +3,7 @@ scoreboard players set @s BossStage 8
 scoreboard players set @s BossTimer 0
 playsound entity.wither.spawn hostile @a ~ ~ ~ 10 1
 
-summon ravager ~ ~ ~ {attributes:[{id:"minecraft:movement_speed",base:0.15},{id:"minecraft:attack_damage",base:0.3}],Tags:["PolRav","PolMob"],DeathLootTable:""}
+summon ravager ~ ~ ~ {attributes:[{id:"minecraft:movement_speed",base:0.12},{id:"minecraft:attack_damage",base:0.3}],Tags:["PolRav","PolMob"],DeathLootTable:""}
 execute if score @s BossDifficulty matches 2.. run summon spider ~2 ~ ~2
 execute if score @s BossDifficulty matches 2.. run summon spider ~-2 ~ ~2
 execute if score @s BossDifficulty matches 2.. run summon spider ~2 ~ ~-2
