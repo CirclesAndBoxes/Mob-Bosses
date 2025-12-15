@@ -21,7 +21,7 @@ execute if entity @e[type=ravager,tag=RvBoss] run function mobbosses:boss_tick/r
 #Bee
 execute as @e[tag=Buzzye,nbt={HasStung:1b}] at @s run effect give @s regeneration 2 3 false
 execute as @e[tag=Buzzye,nbt={HasStung:1b}] at @s run particle happy_villager ~ ~ ~ 0.5 0.5 0.5 2 10
-execute as @e[tag=Buzzye] at @s run data merge entity @s {HasStung:0b,AngerTime:1000000}
+execute as @e[tag=Buzzye] at @s run data merge entity @s {HasStung:0b,anger_end_time:1000000}
 
 execute as @e[tag=BuzzBoss,nbt={HurtTime:5s}] at @s run scoreboard players add @s DamageCounter 1
 execute as @e[tag=BuzzBoss,scores={DamageCounter=3..}] at @s run summon endermite ~ ~ ~
@@ -32,7 +32,7 @@ execute as @e[tag=BuzzBoss,scores={DamageCounter=3..}] at @s run scoreboard play
 execute as @e[tag=SuperRapidPillager,type=pillager] at @s run data merge entity @s {equipment:{mainhand:{id:"minecraft:crossbow",count:1,components:{enchantments:{quick_charge:5},"minecraft:charged_projectiles":[{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:harming"}}}]}},offhand:{id:"minecraft:tipped_arrow",count:64,components:{"minecraft:potion_contents":{potion:"minecraft:harming"}}}}}
 
 #Iron Golem
-execute as @e[tag=AngryIron] at @s run data merge entity @s {AngerTime:1000000}
+execute as @e[tag=AngryIron] at @s run data merge entity @s {anger_end_time:1000000}
 
 scoreboard players remove @e[tag=IronBoss,scores={BossStage=1..3}] BossTimer 1
 scoreboard players set @e[tag=IronBoss,nbt={HurtTime:9s}] BossTimer 60
